@@ -150,6 +150,9 @@
   <data name="menu_anglais" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="menu_donations" xml:space="preserve">
+    <value>Donateurs</value>
+  </data>
   <data name="menu_francais" xml:space="preserve">
     <value>Français</value>
   </data>

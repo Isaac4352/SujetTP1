@@ -15,15 +15,18 @@ namespace I18nConfigRessources.ViewModels
         private BaseViewModel _viewModelActuel;
         private AccueilViewModel _accueilViewModel;
         private PersonneViewModel _personneViewModel;
+        private DonationViewModel _donationViewModel;
 
         public MainViewModel(MessageErreur erreur, Question question) : base(erreur, question)
         {
             _accueilViewModel = new AccueilViewModel(erreur, question);
             _personneViewModel = new PersonneViewModel(erreur, question);
+           // _donationViewModel = new DonationViewModel(erreur, question);
             _viewModelActuel = _personneViewModel;
             CmdGotoAccueil = new RelayCommand(GotoAccueil, null);
             CmdGotoPersonne = new RelayCommand(GotoPersonne, null);
             CmdChangerLangue = new RelayCommand(ChangerLangue, null);
+            CmdGotoAccueil = new RelayCommand(GotoDonation, null);
         }
 
         private void ChangerLangue(object? obj)
@@ -49,11 +52,18 @@ namespace I18nConfigRessources.ViewModels
             ViewModelActuel = _personneViewModel;
         }
 
+        private void GotoDonation(object? obj)
+        {
+            ViewModelActuel = _donationViewModel;
+        }
+
         public RelayCommand CmdGotoAccueil { get; private set; }
 
         public RelayCommand CmdGotoPersonne { get; private set; }
 
         public RelayCommand CmdChangerLangue { get; private set; }
+
+        public RelayCommand CmdGoToDonation { get; private set; }
 
         public BaseViewModel ViewModelActuel
         {

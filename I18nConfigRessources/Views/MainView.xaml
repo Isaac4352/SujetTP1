@@ -36,11 +36,12 @@
 
         <Menu Width="{Binding ElementName=win, Path=Width}">
             <MenuItem Header="{x:Static p:traduction.menu_accueil}" Command="{Binding CmdGotoAccueil}"  />
-            <MenuItem Header="{x:Static p:traduction.menu_personnes}" Command="{Binding CmdGotoPersonne}"   />
+            <MenuItem Header="{x:Static p:traduction.menu_personnes}" Command="{Binding CmdGotoPersonne}"  />
             <MenuItem Header="{x:Static p:traduction.menu_langue}">
                 <MenuItem Header="{x:Static p:traduction.menu_francais}" Command="{Binding CmdChangerLangue}" CommandParameter="fr-CA" />
                 <MenuItem Header="{x:Static p:traduction.menu_anglais}" Command="{Binding CmdChangerLangue}"  CommandParameter="en-US" />
             </MenuItem>
+            <MenuItem Header="{x:Static p:traduction.menu_donations}" Command="{Binding CmdGoToDonation}"  />
         </Menu>
 
            <!-- Pour indiquer quel View/ViewModel doit être affiché -->
