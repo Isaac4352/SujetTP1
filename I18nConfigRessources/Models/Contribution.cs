@@ -52,7 +52,6 @@ namespace I18nConfigRessources.Models
             this.anneeFinanciere = Convert.ToInt32(champs[9]);
         }
 
-
         public string ToCsv()
         {
             StringBuilder sb = new StringBuilder();
@@ -121,6 +120,9 @@ namespace I18nConfigRessources.Models
         public DateTime? DateEvenement => dateEvenement;
 
         public int AnneeFinanciere => anneeFinanciere;
+
+
+
 
         public override string ToString()
         {

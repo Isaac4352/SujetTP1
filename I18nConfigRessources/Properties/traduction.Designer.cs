@@ -79,11 +79,29 @@ namespace I18nConfigRessources.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Configuration.
+        /// </summary>
+        public static string btn_lang_config {
+            get {
+                return ResourceManager.GetString("btn_lang_config", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Modifier.
         /// </summary>
         public static string btn_modifier {
             get {
                 return ResourceManager.GetString("btn_modifier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sauvegarder.
+        /// </summary>
+        public static string btn_sauvegarder {
+            get {
+                return ResourceManager.GetString("btn_sauvegarder", resourceCulture);
             }
         }
         
@@ -106,11 +124,146 @@ namespace I18nConfigRessources.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Anglais.
+        /// </summary>
+        public static string lbl_anglais {
+            get {
+                return ResourceManager.GetString("lbl_anglais", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Année de contribution.
+        /// </summary>
+        public static string lbl_contri_annee {
+            get {
+                return ResourceManager.GetString("lbl_contri_annee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Candidat.
+        /// </summary>
+        public static string lbl_contri_candidat {
+            get {
+                return ResourceManager.GetString("lbl_contri_candidat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Illégales seulement:.
+        /// </summary>
+        public static string lbl_contri_check_illegalite {
+            get {
+                return ResourceManager.GetString("lbl_contri_check_illegalite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date de l&apos;évenement.
+        /// </summary>
+        public static string lbl_contri_date {
+            get {
+                return ResourceManager.GetString("lbl_contri_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entité Politique.
+        /// </summary>
+        public static string lbl_contri_entite {
+            get {
+                return ResourceManager.GetString("lbl_contri_entite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Illégale?.
+        /// </summary>
+        public static string lbl_contri_illegalite {
+            get {
+                return ResourceManager.GetString("lbl_contri_illegalite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Montant.
+        /// </summary>
+        public static string lbl_contri_montant {
+            get {
+                return ResourceManager.GetString("lbl_contri_montant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Municipalité.
+        /// </summary>
+        public static string lbl_contri_municipalite {
+            get {
+                return ResourceManager.GetString("lbl_contri_municipalite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nom.
+        /// </summary>
+        public static string lbl_contri_nom {
+            get {
+                return ResourceManager.GetString("lbl_contri_nom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code Postal.
+        /// </summary>
+        public static string lbl_contri_postal {
+            get {
+                return ResourceManager.GetString("lbl_contri_postal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prénom.
+        /// </summary>
+        public static string lbl_contri_prenom {
+            get {
+                return ResourceManager.GetString("lbl_contri_prenom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type.
+        /// </summary>
+        public static string lbl_contri_type {
+            get {
+                return ResourceManager.GetString("lbl_contri_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paiements.
+        /// </summary>
+        public static string lbl_contri_versements {
+            get {
+                return ResourceManager.GetString("lbl_contri_versements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Décompte.
         /// </summary>
         public static string lbl_decompte {
             get {
                 return ResourceManager.GetString("lbl_decompte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Francais.
+        /// </summary>
+        public static string lbl_francais {
+            get {
+                return ResourceManager.GetString("lbl_francais", resourceCulture);
             }
         }
         
@@ -129,6 +282,15 @@ namespace I18nConfigRessources.Properties {
         public static string lbl_prenom {
             get {
                 return ResourceManager.GetString("lbl_prenom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Redémarrage après changements:.
+        /// </summary>
+        public static string lbl_redemarrage {
+            get {
+                return ResourceManager.GetString("lbl_redemarrage", resourceCulture);
             }
         }
         

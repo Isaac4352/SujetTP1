@@ -123,8 +123,14 @@
   <data name="btn_annuler" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="btn_lang_config" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
   <data name="btn_modifier" xml:space="preserve">
     <value>Modify</value>
+  </data>
+  <data name="btn_sauvegarder" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="btn_supprimer_selection" xml:space="preserve">
     <value>Delete selection</value>
@@ -132,14 +138,62 @@
   <data name="btn_supprimer_tout" xml:space="preserve">
     <value>Delete all</value>
   </data>
+  <data name="lbl_anglais" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lbl_contri_annee" xml:space="preserve">
+    <value>Year of the contribution</value>
+  </data>
+  <data name="lbl_contri_candidat" xml:space="preserve">
+    <value>Candidate</value>
+  </data>
+  <data name="lbl_contri_check_illegalite" xml:space="preserve">
+    <value>Illegal only:</value>
+  </data>
+  <data name="lbl_contri_date" xml:space="preserve">
+    <value>Event date</value>
+  </data>
+  <data name="lbl_contri_entite" xml:space="preserve">
+    <value>Political Entity</value>
+  </data>
+  <data name="lbl_contri_illegalite" xml:space="preserve">
+    <value>Illegal?</value>
+  </data>
+  <data name="lbl_contri_montant" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="lbl_contri_municipalite" xml:space="preserve">
+    <value>Municipality</value>
+  </data>
+  <data name="lbl_contri_nom" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lbl_contri_postal" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="lbl_contri_prenom" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="lbl_contri_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="lbl_contri_versements" xml:space="preserve">
+    <value>Payments</value>
+  </data>
   <data name="lbl_decompte" xml:space="preserve">
     <value>Count</value>
+  </data>
+  <data name="lbl_francais" xml:space="preserve">
+    <value>French</value>
   </data>
   <data name="lbl_nom" xml:space="preserve">
     <value>Last name</value>
   </data>
   <data name="lbl_prenom" xml:space="preserve">
     <value>First name</value>
+  </data>
+  <data name="lbl_redemarrage" xml:space="preserve">
+    <value>Restart after changes:</value>
   </data>
   <data name="lbl_tel" xml:space="preserve">
     <value>Phone number</value>

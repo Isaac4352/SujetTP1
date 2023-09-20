@@ -21,12 +21,12 @@ namespace I18nConfigRessources.ViewModels
         {
             _accueilViewModel = new AccueilViewModel(erreur, question);
             _personneViewModel = new PersonneViewModel(erreur, question);
-           // _donationViewModel = new DonationViewModel(erreur, question);
+            _donationViewModel = new DonationViewModel(erreur, question);
             _viewModelActuel = _personneViewModel;
             CmdGotoAccueil = new RelayCommand(GotoAccueil, null);
             CmdGotoPersonne = new RelayCommand(GotoPersonne, null);
             CmdChangerLangue = new RelayCommand(ChangerLangue, null);
-            CmdGotoAccueil = new RelayCommand(GotoDonation, null);
+            CmdGoToDonation = new RelayCommand(GotoDonation, null);
         }
 
         private void ChangerLangue(object? obj)
@@ -39,6 +39,7 @@ namespace I18nConfigRessources.ViewModels
                 //System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
                 System.Diagnostics.Process.Start(fileName: Environment.ProcessPath);
                 Application.Current.Shutdown();
+               
             }
         }
 

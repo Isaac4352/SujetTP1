@@ -4,22 +4,40 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:p="clr-namespace:I18nConfigRessources.Properties"
+             xmlns:converters="clr-namespace:I18nConfigRessources.ViewModels.Converters"
              xmlns:local="clr-namespace:I18nConfigRessources.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <converters:BoolToIllegaliteConverter x:Key="boolToIllegalite"/>
+    </UserControl.Resources>
     <Grid Background="White" Height="450" Width="800" Margin="0,0,0,0" VerticalAlignment="Top">
         <Menu>
-            <MenuItem Header="{x:Static p:traduction.menu_accueil}" Command="{Binding CmdGotoAccueil}"  />
+            <MenuItem Header="{x:Static p:traduction.btn_lang_config}" Command="{Binding CmdGotoConfiguration}"  />
+            <!--amener vers nouvelle petite fenetre pour changer le language-->
         </Menu>
-        <ListView x:Name="liste_items" Margin="78,62,85,0"  
-                  Height="310" VerticalAlignment="Top" 
-                  ItemsSource="{Binding Path=Personnes}"
-                  SelectedItem="{Binding PersonneSelectionnee, Mode=OneWayToSource}">
+        <TextBlock Text="{Binding Contributions.Count, StringFormat='count: {0}'}" Margin="618,23,38,403"/>
+        <Button Command="{Binding CmdAjouterListe}" Content="{x:Static p:traduction.btn_ajouter}" Margin="120,28,582,394"/>
+        <Button Command="{Binding CmdEffacerListe}" Content="{x:Static p:traduction.btn_supprimer_tout}"   Margin="244,28,458,394" />
+        <Label Target="{Binding ElementName=check_illegales}" Content="{x:Static p:traduction.lbl_contri_check_illegalite}" Margin="356,23,275,399"/>
+        <CheckBox Margin="485,30,297,396" x:Name="check_illegales" RenderTransformOrigin="1.42,0.324" Command="{Binding CmdCheckIllegales}" CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"/>
+        <ListView x:Name="liste_items"  
+                  Height="379" VerticalAlignment="Top" 
+                  ItemsSource="{Binding Path=Contributions}" Margin="10,61,10,0" d:ItemsSource="{d:SampleData ItemCount=5}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="200" Header="{x:Static p:traduction.lbl_nom}" DisplayMemberBinding="{Binding Nom, Mode=OneWay}"/>
-                    <GridViewColumn Width="200" Header="{x:Static p:traduction.lbl_prenom}" DisplayMemberBinding="{Binding Prenom, Mode=OneWay}"/>
-                    <GridViewColumn Width="200" Header="{x:Static p:traduction.lbl_tel}" DisplayMemberBinding="{Binding Telephone, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_type}" DisplayMemberBinding="{Binding Type, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_prenom}" DisplayMemberBinding="{Binding Prenom, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_nom}" DisplayMemberBinding="{Binding Nom, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_montant}" DisplayMemberBinding="{Binding Montant, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_versements}" DisplayMemberBinding="{Binding NbVersements, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_municipalite}" DisplayMemberBinding="{Binding Municipalite, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_postal}" DisplayMemberBinding="{Binding CodePostal, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_entite}" DisplayMemberBinding="{Binding Parti, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_candidat}" DisplayMemberBinding="{Binding Candidat, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_date}" DisplayMemberBinding="{Binding DateEvenement, StringFormat='M/d/YYYY', Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_annee}" DisplayMemberBinding="{Binding AnneeFinanciere, Mode=OneWay}"/>
+                    <GridViewColumn Width="auto" Header="{x:Static p:traduction.lbl_contri_illegalite}" DisplayMemberBinding="{Binding EstIllegale, Mode=OneWay, Converter={StaticResource boolToIllegalite}}"/>
                 </GridView>
             </ListView.View>
         </ListView>

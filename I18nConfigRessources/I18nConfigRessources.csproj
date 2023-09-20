@@ -8,10 +8,12 @@
   <ItemGroup>
     <None Remove="Resources\contacts.csv" />
     <None Remove="Resources\drole.ico" />
+    <None Remove="Resources\election.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\contacts.csv" />
     <Resource Include="Resources\drole.ico" />
+    <Resource Include="Resources\election.ico" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\AutresRessources.Designer.cs">

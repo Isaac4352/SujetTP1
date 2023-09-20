@@ -11,7 +11,7 @@
         Height="525" Width="825" 
         ResizeMode="CanMinimize"
         x:Name="win"
-        Icon="/Resources/drole.ico">
+        Icon="/Resources/election.ico">
     
     <!-- D'où vient le DataContext -->
     <!--<Window.DataContext>
@@ -25,6 +25,9 @@
         </DataTemplate>
         <DataTemplate DataType="{x:Type viewmodels:PersonneViewModel}">
             <local:PersonneView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodels:DonationViewModel}">
+            <local:DonationView/>
         </DataTemplate>
     </Window.Resources>
 
